@@ -1,0 +1,52 @@
+page {
+  background-color: #EFF4F5;
+}
+
+/* 搜索框 */
+.SearchBar {
+  display         : flex;
+  align-items     : center;
+  margin          : 10px;
+  padding         : 5px 10px;
+  border-radius   : 5px;
+  background-color: white;
+  overflow        : hidden;
+}
+
+.SearchBar image {
+  width : 20px;
+  height: 20px;
+}
+
+.SearchBar input {
+  flex       : 1;
+  margin     : 0px;
+  padding    : 5px;
+  font-size  : 14px;
+  font-weight: bold;
+  color      : #555;
+}
+
+/* 列表 */
+.item {
+  padding         : 10px 15px;
+  background-color: white;
+  border-bottom   : 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.item.tag {
+  color           : #5ECCCE;
+  background-color: transparent;
+  border-bottom   : none;
+}
+
+.item:active {
+  opacity: 0.7;
+}
+
+/* 提示信息 */
+.tips {
+  color     : #5ECCCE;
+  text-align: center;
+  margin-top: 10vh;
+}

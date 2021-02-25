@@ -1,0 +1,15 @@
+<!-- 搜索框 -->
+<view class="SearchBar">
+  <image mode="aspectFit" src="/svg/search-2-line.svg" />
+  <input placeholder="搜索" bindinput="searchName" />
+</view>
+<!-- 第一层循环渲染：获取首字母 -->
+<view wx:for="{{contact}}" wx:for-item="list" wx:for-index="tag" wx:key="contact">
+  <view class="item tag">{{tag}}</view>
+  <!-- 第二次循环渲染：获取联系人数组 -->
+  <view class="item" wx:for="{{list}}" wx:key="list" bind:tap="GoToPage" data-name="{{item.name}}">
+    {{item.name}}
+  </view>
+</view>
+<!-- 无内容时 -->
+<view class="tips" wx:if="{{contact_length==0}}">无联系人</view>

@@ -1,0 +1,75 @@
+/* 通用属性 */
+
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.center {
+    justify-content: center;
+    align-items    : center;
+}
+
+.flex.center-m {
+    justify-content: center;
+}
+
+.flex.center-c {
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+
+/* 用户资料 */
+.user {
+    padding      : 10px;
+    font-size    : 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.user:active,
+.info:active {
+    background-color: #EFF4F5;
+}
+
+.user>view>view,
+.info>view {
+    margin: 5px 0;
+}
+
+.user>.avatar {
+    width        : 70px;
+    height       : 70px;
+    margin-right : 10px;
+    border-radius: 50%;
+    border       : 3px solid #89B7C3;
+}
+
+.user>.icon {
+    width : 30px;
+    height: 30px;
+}
+
+/* 其他信息 */
+.info {
+    padding      : 5px 15px;
+    font-size    : 14px;
+    color        : #5ECCCE;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.info>view {
+    pointer-events: none;
+}
+
+.info>view:last-child {
+    font-size  : 16px;
+    font-weight: bold;
+    color      : #555555;
+}

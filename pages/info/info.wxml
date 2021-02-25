@@ -1,0 +1,24 @@
+<view class="user flex center-c">
+    <image class="avatar" src="{{info.avatar}}" mode="aspectFit" />
+    <view class="flex-1">
+        <view  data-text="{{info.name}}">{{info.name}}</view>
+        <view bindlongpress="copyText" data-text="{{info.phone}}">{{info.phone}}</view>
+    </view>
+    <!-- <image class="icon" src="/svg/arrow-right-s-line.svg" mode="aspectFit" /> -->
+</view>
+<view class="info" data-text="{{info.sex}}">
+    <view>性别</view>
+    <view>{{info.sex}}</view>
+</view>
+<view class="info"  data-text="{{info.department}}">
+    <view>学院</view>
+    <view>{{info.department}}</view>
+</view>
+<view class="info" bindlongpress="copyText" data-text="{{info.wechat}}">
+    <view>微信号</view>
+    <view>{{info.wechat}}</view>
+</view>
+<view class="info"  data-text="{{info.discipline}}">
+    <view>专业班级</view>
+    <view>{{info.discipline}}</view>
+</view>
